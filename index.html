@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-full h-screen bg-gray-900 flex justify-center  items-center p-2">
+      <form id="myForm" class="w-1/2 h-fit bg-white rounded-2xl">
+        <div class="flex mt-5 justify-center underline overflow-x-auto">
+          <h1 class="text-black pl-5 text-3xl font-bold">BILLING SOFTWARE</h1>
+        </div>
+        <div class="flex justify-center mt-5 gap-5 p-3">
+          <div class="mb-4 w-full">
+            <label for="itemName" class="block font-medium text-xl"
+              >Item Name</label
+            >
+            <input
+              id="itemName"
+              type="text"
+              placeholder="Enter item name"
+              class="w-full border rounded p-2 mt-1"
+            />
+          </div>
+          <div class="mb-4 w-full">
+            <label for="itemPrice" class="block font-medium text-xl"
+              >Item Price</label
+            >
+            <input
+              id="itemPrice"
+              type="number"
+              placeholder="Enter item price"
+              class="w-full border rounded p-2 mt-1"
+            />
+          </div>
+        </div>
+        <div class="flex items-center justify-end p-3">
+          <button
+            id="addItem"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg h-fit hover:bg-blue-600 transition"
+          >
+            Add Item
+          </button>
+        </div>
+        <div>
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-3">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+            >
+              <thead
+                class="text-l text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">Item name</th>
+                  <th scope="col" class="px-6 py-3">Item price</th>
+                  <th scope="col" class="px-6 py-3">sub total</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="flex justify-end p-3">
+            <span id="gTotal" class="font-medium text-xl"
+              >Grand Total : ₹ 0.00</span
+            >
+          </div>
+        </div>
+      </form>
+    </section>
+
+   
+  </body>
+  <script src="script.js"></script>
+</html>
